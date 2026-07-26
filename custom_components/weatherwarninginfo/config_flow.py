@@ -8,7 +8,7 @@ from .const import AREA_URL, CONF_AREA_CODE, DOMAIN
 _LOGGER = logging.getLogger(__name__)
 
 @config_entries.HANDLERS.register(DOMAIN)
-class JmaWarningConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class JmaWarningConfigFlow(config_entries.ConfigFlow):
     """Handle a config flow for JMA Weather Warning Info."""
 
     VERSION = 1
